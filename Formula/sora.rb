@@ -7,7 +7,7 @@ class MyTool < Formula
     def install
       # 1. 실행 파일 설치: bin 폴더에 넣으면 자동으로 PATH에 등록됩니다.
       # 기존 쉘 스크립트 파일이 'my-script.sh'라면
-      bin.install "my-script.sh" => "sora"
+      bin.install "my-script.sh" => "sora-test"
   
       # 2. 기타 리소스 파일이 있다면
       # pkgshare.install "config.json"
@@ -15,6 +15,6 @@ class MyTool < Formula
   
     test do
       # 설치가 잘 되었는지 확인하는 간단한 테스트
-      system "#{bin}/sora", "--version"
+      system "#{bin}/sora-test", "--version"
     end
   end
