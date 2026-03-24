@@ -1,8 +1,8 @@
 class MyTool < Formula
     desc "내 도구에 대한 간단한 설명"
-    homepage "https://github.com/hanbyeongtak/homebrew-sora"
-    url "https://github.com/hanbyeongtak/homebrew-sora/archive/refs/tags/v1.0.0.tar.gz"
-    sha256 "110cf9bb6be8fbe9c9ef63a98ea6801750a023dbb265d97fcaff0eb7be6f9356" # 'shasum -a 256 파일명'으로 확인 가능
+    homepage "https://github.com/hanbyeongtak/sora-app"
+    url "https://github.com/hanbyeongtak/sora-app/archive/refs/tags/v1.0.0.tar.gz"
+    sha256 "a6d9f333bae81dd85bc1b78e2b594cb84ae765ea21a7ed057d3ae0ddf64fff32" # 'shasum -a 256 파일명'으로 확인 가능
     license "MIT"
     def install
       # 1. 실행 파일 설치: bin 폴더에 넣으면 자동으로 PATH에 등록됩니다.
