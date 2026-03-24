@@ -1,4 +1,4 @@
-class Sora < Formula
+class SoraTest < Formula
     desc "내 도구에 대한 간단한 설명"
     homepage "https://github.com/hanbyeongtak/sora-app"
     url "https://github.com/hanbyeongtak/sora-app/archive/refs/tags/v1.0.0.tar.gz"
