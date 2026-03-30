@@ -19,7 +19,7 @@ class MaumSora < Formula
       APP_ROOT="$(brew --prefix maum-sora)/libexec"
       cd "$APP_ROOT"
 
-      exec uv run --frozen python main.py "$@"
+      exec uv run --frozen python __main__.py "$@"
     EOS
 
     chmod 0755, bin/"maum-sora"
