@@ -22,7 +22,6 @@ class MaumSora < Formula
     bin.install libexec/"scripts/maum-sora"
     bin.install libexec/"scripts/maum-sora-service"
 
-
   end
 
   service do
