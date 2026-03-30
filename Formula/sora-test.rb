@@ -1,13 +1,30 @@
-class SoraTest < Formula
+class MaumSora < Formula
     desc "내 도구에 대한 간단한 설명"
     homepage "https://github.com/hanbyeongtak/sora-app"
     url "https://github.com/hanbyeongtak/sora-app/archive/refs/tags/v1.0.1.tar.gz"
     sha256 "4dc47fcb851ed70f719623dff720432a337b3b9ddfb85af94253cc4b6602b308" # 'shasum -a 256 파일명'으로 확인 가능
     license "MIT"
+
+    depends_on "uv"
+    depends_on "htop"
+    depends_on "ffmpeg"
+    depends_on "gst-plugins-base"
+    depends_on "gst-plugins-good"
+    depends_on "gst-plugins-bad"
+    depends_on "gst-plugins-ugly"
+    depends_on "gst-libav"
+    depends_on "gstreamer"
+    depends_on "nginx"
+    depends_on "mariadb"
+    depends_on "google-chrome"
+    depends_on "pkg-config"
+    depends_on "cairo"
+
+
     def install
       # 1. 실행 파일 설치: bin 폴더에 넣으면 자동으로 PATH에 등록됩니다.
       # 기존 쉘 스크립트 파일이 'my-script.sh'라면
-      bin.install "my-script.sh" => "sora-test"
+      bin.install "my-script.sh" => "maum-sora"
   
       # 2. 기타 리소스 파일이 있다면
       # pkgshare.install "config.json"
