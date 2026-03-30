@@ -8,24 +8,25 @@ class MaumSora < Formula
   depends_on "uv"
   depends_on "ffmpeg"
   depends_on "gstreamer"
-  depends_on "gst-plugins-base"
-  depends_on "gst-plugins-good"
-  depends_on "gst-plugins-bad"
-  depends_on "gst-plugins-ugly"
-  depends_on "gst-libav"
-  depends_on "pkg-config"
-  depends_on "cairo"
 
   def install
     libexec.install Dir["*"]
 
-    bin.install libexec/"scripts/maum-sora"
-    bin.install libexec/"scripts/maum-sora-service"
+    (bin/"maum-sora").write <<~EOS
+      #!/usr/bin/env bash
+      export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 
+      APP_ROOT="$(brew --prefix maum-sora)/libexec"
+      cd "$APP_ROOT"
+
+      exec uv run --frozen python main.py "$@"
+    EOS
+
+    chmod 0755, bin/"maum-sora"
   end
 
   service do
-    run [opt_bin/"maum-sora-service"]
+    run [opt_bin/"maum-sora"]
     keep_alive true
     working_dir var
     log_path var/"log/maum-sora.log"
@@ -33,6 +34,6 @@ class MaumSora < Formula
   end
 
   test do
-    assert_predicate bin/"maum-sora", :exist?
+    system "#{bin}/maum-sora", "--help"
   end
 end
