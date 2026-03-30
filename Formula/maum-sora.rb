@@ -1,8 +1,8 @@
 class MaumSora < Formula
   desc "Maum Sora background service"
   homepage "https://github.com/hanbyeongtak/sora-app"
-  url "https://github.com/hanbyeongtak/sora-app/archive/refs/tags/v1.0.2.tar.gz"
-  sha256 "115e189c343831e239893ecbeed249f7b6389f200552af383c6a57157b18f42c"
+  url "https://github.com/hanbyeongtak/sora-app/archive/refs/tags/v1.0.3.tar.gz"
+  sha256 "ae85754a1fc6df47b7bc24b1230ab0ec5708ac5a959b71a7833ca8c6fad94b79"
   license "MIT"
 
   depends_on "uv"
