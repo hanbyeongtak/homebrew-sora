@@ -1,14 +1,13 @@
 class MaumSora < Formula
   desc "Maum Sora background service"
   homepage "https://github.com/hanbyeongtak/sora-app"
-  url "https://github.com/hanbyeongtak/sora-app/archive/refs/tags/v1.0.3.tar.gz"
-  sha256 "ae85754a1fc6df47b7bc24b1230ab0ec5708ac5a959b71a7833ca8c6fad94b79"
+  url "https://github.com/hanbyeongtak/sora-app/archive/refs/tags/v1.0.4.tar.gz"
+  sha256 "63637be11523a6c40e692672cc013f4e20fea0906730b351161b1a8f73ff5d8d"
   license "MIT"
 
   depends_on "uv"
   depends_on "ffmpeg"
   depends_on "gstreamer"
-
   def install
     libexec.install Dir["*"]
 
