@@ -17,10 +17,16 @@ class MaumSora < Formula
   depends_on "cairo"
 
   def install
+    # libexec.install Dir["*"]
+
+    # bin.install libexec/"scripts/maum-sora"
+    # bin.install libexec/"scripts/maum-sora-service"
+
+
     libexec.install Dir["*"]
 
-    bin.install libexec/"scripts/maum-sora"
-    bin.install libexec/"scripts/maum-sora-service"
+    bin.install Dir["scripts/maum-sora"]
+    bin.install Dir["scripts/maum-sora-service"]
   end
 
   service do
