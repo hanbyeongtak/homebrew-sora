@@ -19,8 +19,10 @@ class MaumSora < Formula
   def install
     libexec.install Dir["*"]
 
-    bin.install "scripts/maum-sora"
-    bin.install "scripts/maum-sora-service"
+    bin.install libexec/"scripts/maum-sora"
+    bin.install libexec/"scripts/maum-sora-service"
+
+
   end
 
   service do
