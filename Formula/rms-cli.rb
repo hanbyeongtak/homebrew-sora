@@ -1,8 +1,8 @@
 class RmsCli < Formula
   desc "Maum Sora background service"
   homepage "https://github.com/hanbyeongtak/rms_cli"
-  url "https://github.com/hanbyeongtak/rms_cli/archive/refs/tags/v0.0.1.tar.gz"
-  sha256 "02effcbd9026740b2487a9df6ffe2907d1997490fb9305a3da953608f2644aa4"
+  url "https://github.com/hanbyeongtak/rms_cli/archive/refs/tags/v0.0.2.tar.gz"
+  sha256 "34452f3f010d53a293a48388c65710e09a5008ac4b08dd6b18233a57913c3fd8"
   license "MIT"
 
   def install
