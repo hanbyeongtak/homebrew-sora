@@ -12,7 +12,7 @@ class RmsCli < Formula
       #!/usr/bin/env bash
       export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
 
-      APP_ROOT="$(brew --prefix maum-sora)/libexec"
+      APP_ROOT="$(brew --prefix rms-cli)/libexec"
       cd "$APP_ROOT"
 
       exec uv run python3 scripts/setup_rms.py "$@"
@@ -23,6 +23,6 @@ class RmsCli < Formula
 
 
   test do
-    system "#{bin}/maum-sora", "--help"
+    system "#{bin}/rms-cli", "--help"
   end
 end
