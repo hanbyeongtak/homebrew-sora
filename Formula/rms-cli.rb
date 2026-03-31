@@ -3,7 +3,7 @@ class RmsCli < Formula
   homepage "https://github.com/hanbyeongtak/rms_cli"
   url "https://github.com/hanbyeongtak/rms_cli/archive/refs/tags/v0.0.2.tar.gz"
   sha256 "34452f3f010d53a293a48388c65710e09a5008ac4b08dd6b18233a57913c3fd8"
-  license "MIT"
+  license "Copyright (c) 2026 MAUM.AI Inc. All rights reserved."
 
   def install
     libexec.install Dir["*"]

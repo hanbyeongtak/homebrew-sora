@@ -3,7 +3,7 @@ class MaumSora < Formula
   homepage "https://github.com/hanbyeongtak/sora-app"
   url "https://github.com/hanbyeongtak/sora-app/archive/refs/tags/v1.0.4.tar.gz"
   sha256 "63637be11523a6c40e692672cc013f4e20fea0906730b351161b1a8f73ff5d8d"
-  license "MIT"
+  license "Copyright (c) 2026 MAUM.AI Inc. All rights reserved."
 
   depends_on "uv"
   depends_on "ffmpeg"
